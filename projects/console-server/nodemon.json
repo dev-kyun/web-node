@@ -1,0 +1,10 @@
+{
+  "verbose": true,
+  "watch": [
+    "../../packages/typescript/common/src",
+    "./src",
+    "./scripts"
+  ],
+  "exec": "yarn run build && node -r tsconfig-paths/register -r ts-node/register ./build/src/main",
+  "ext": "ts"
+}

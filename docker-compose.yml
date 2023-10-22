@@ -1,0 +1,36 @@
+version: '3.7'
+
+services:
+  dev-console-server:
+    container_name: console-server
+    image: ~~.dkr.ecr.ap-northeast-2.amazonaws.com/dev-console-server:latest
+    pull_policy: always
+    restart: always
+    ports:
+      - '4001:4001'
+    environment:
+      - RDS_HOST=
+      - RDS_PORT=
+      - RDS_SCHEMA=
+      - RDS_USERNAME=
+      - RDS_PASSWORD=
+      - RDS_SSL_CONNECTION=
+      - RUN_TYPE=
+      - API_TOKEN=
+
+  prod-console-server:
+    container_name: console-server
+    image: ~~.dkr.ecr.ap-northeast-2.amazonaws.com/prod-console-server:latest
+    pull_policy: always
+    restart: always
+    ports:
+      - '4001:4001'
+    environment:
+      - RDS_HOST=
+      - RDS_PORT=
+      - RDS_SCHEMA=
+      - RDS_USERNAME=
+      - RDS_PASSWORD=
+      - RDS_SSL_CONNECTION=
+      - RUN_TYPE=
+      - API_TOKEN=

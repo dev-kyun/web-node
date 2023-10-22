@@ -1,0 +1,10 @@
+logLevel: verbose
+
+actionSource:
+  use: true
+  # note: find ${searchPath}/${actionId}/action.config.yaml
+  searchPaths:
+    # from host-agent workspace
+    - ../../
+    # from dost workspace
+    - ../../../

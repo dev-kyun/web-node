@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    /*************************************************************************
+      local db
+     *************************************************************************/
+    {
+      "type": "npm",
+      "script": "start:pgsql",
+      "label": "Dev: pgsql",
+      "path": "projects/console-web-server",
+      "problemMatcher": [],
+      "presentation": {
+        "group": "devWatchers",
+        "close": false,
+        "panel": "shared"
+      }
+    },
+    /*************************************************************************
+      Watch
+     *************************************************************************/
+    {
+      "type": "npm",
+      "script": "watch",
+      "label": "Watch: packages",
+      "path": "",
+      "problemMatcher": [],
+      "presentation": {
+        "group": "packagesWatchers",
+        "close": false,
+        "panel": "shared"
+      }
+    }
+  ]
+}
